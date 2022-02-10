@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Driver : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 1f;
+    [SerializeField] float moveSpeed = 3f;
     [SerializeField] float Drivingcontrol = 0.1f;
     private Input streerSpeed;
     private Time deltaTime;
@@ -21,8 +21,8 @@ public class Driver : MonoBehaviour
     {
         _ = Input./GetAxis("Horizontal") * streerSpeed * Time.deltaTime;
         float moveAmount = Input. GetAxis("Vertical") * moveSpeed * Time. deltaTime;
-        transform.Rotate(0, 0, Drivingcontrol);
-        transform.Translate(0, 0.01f, 0);
+        transform.Rotate(0, 1, Drivingcontrol);
+        transform.Translate(0, 0.02f, 0);
     }
 
     private Input GetAxis(string v)
