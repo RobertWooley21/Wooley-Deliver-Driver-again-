@@ -6,9 +6,9 @@ using UnityEngine;
 public class Driver : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 3f;
-    [SerializeField] float Drivingcontrol = 0.1f;
-    private Input streerSpeed;
-    private Time deltaTime;
+    //[SerializeField] float Drivingcontrol = 0.1f;
+    [SerializeField] float streerSpeed;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -19,10 +19,10 @@ public class Driver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _ = Input./GetAxis("Horizontal") * streerSpeed * Time.deltaTime;
-        float moveAmount = Input. GetAxis("Vertical") * moveSpeed * Time. deltaTime;
-        transform.Rotate(0, 1, Drivingcontrol);
-        transform.Translate(0, 0.02f, 0);
+        float steerAmount = Input.GetAxis("Horizontal") * streerSpeed * Time.deltaTime;
+        float moveAmount = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+        transform.Rotate(0, 0, steerAmount);
+        transform.Translate(0, moveAmount, 0);
     }
 
     private Input GetAxis(string v)
