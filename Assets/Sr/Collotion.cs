@@ -12,7 +12,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
     
     }
-     void OnCollisionEnter2D("Cool");
+     void OnCollisionEnter2D(Collision2D Cool) { }
 
     // Update is called once per frame
     void Update()
