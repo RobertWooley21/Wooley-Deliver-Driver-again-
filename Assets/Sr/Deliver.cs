@@ -4,7 +4,9 @@ using System.Runtime.ConstrainedExecution;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
-{
+{[SerializeField] 32 coloer= haspackagecolor=new Color 32 (1,1,1,1,1)
+ [SerializeField]32color Color no package = new 32color(1,1,1,1,1)
+
     private object readOnlyCollectionneedtoslowdown;
     private object debug;
 
@@ -27,6 +29,9 @@ public class NewBehaviourScript : MonoBehaviour
             { SerializeField float(0.5fS);
                 bool haspackage;false;
                 bool haspackage;= true;
+                SpriteRenderer.color
+                SpriteRenderer spriteRenderer
+
 
                     if tag(other.tag== package"costmer") && haspackage
                 
