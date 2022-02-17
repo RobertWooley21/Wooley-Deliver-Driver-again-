@@ -10,7 +10,7 @@ public class FllowingCamra : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        [SerializeField] gameObject thingtoFollow;
+        [SerializeField] GameObject thingtoFollow;
         
     }
 
