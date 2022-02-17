@@ -8,14 +8,26 @@ public class Driver : MonoBehaviour
     [SerializeField] float moveSpeed = 3f;
     //[SerializeField] float Drivingcontrol = 0.1f;
     [SerializeField] float streerSpeed;
-    
+    [SerializeField] float slowSpeed = f15;
+    [SerializeField] float boostSpeed = f50; 
 
     // Start is called before the first frame update
     void Start()
     {
      
     }
+    private void OnAnimatorIK(int layerIndex)
+    {
+        On tirgger
+            if (tag == "Boost") ;
 
+     
+      
+        Debug.Log("you are boosting!")
+            movementSpeed = boostSpeed; 
+
+        moveSpeed = slowSpeed
+    }
     // Update is called once per frame
     void Update()
     {
